@@ -119,13 +119,13 @@ $(function() {
 
          beforeEach(function(done) {
              // loadFeed loads content referring to id = 0
-             loadFeed(0, function() {
+             loadFeed(1, function() {
                  console.log('loadFeed 0 done');
                  // store previousFeed
                  previousFeed = $(".feed").html();
 
                  // loadFeed loads a different content than the previous one (id = 1)
-                 loadFeed(1, function() {
+                 loadFeed(0, function() {
                      console.log('loadFeed 1 done');
                      // store newFeed
                      newFeed = $(".feed").html();
